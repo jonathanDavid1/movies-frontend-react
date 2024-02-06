@@ -67,10 +67,11 @@ const Actors = () => {
                     </Row>
                 </Col>
             </Row>
-            <ActorsForm 
+            <ActorsForm
                 show={showActorsForm} 
                 handleClose={closeForm} 
                 actorSelected={actorSelected}
+                backgroundColor= {"red"}
             />
         </>
     );

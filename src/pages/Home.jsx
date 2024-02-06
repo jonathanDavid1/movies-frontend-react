@@ -22,9 +22,9 @@ const Home = () => {
     return (
         <Row>
             <Col md={3} xl={2}>
-                <h3>Filter by genre</h3>
+                <h3 style={{ color: "#00acc1" }}>Filter by genre</h3>
                 {genres.map(genre => (
-                    <li
+                    <li style={{ color: "#00acc1" }}
                         key={genre.id}
                         className="filter-option"
                         onClick={() => filterMovies(genre.id, "genres")}
@@ -35,10 +35,10 @@ const Home = () => {
             </Col>
             <Col>
                 <div className="d-flex justify-content-between align-items-start mb-4">
-                    <h1>Movies</h1>
+                    <h1 style={{ color: "#00acc1" }}>Movies</h1>
                     <Button
                         onClick={() => navigate("/movies/add")}
-                        variant="success"
+                        variant="success" style={{ color: "black", backgroundColor:"#00acc1" }}
                     >
                         Add movie
                     </Button>

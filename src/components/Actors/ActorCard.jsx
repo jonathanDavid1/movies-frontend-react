@@ -15,7 +15,7 @@ const ActorCard = ({ actor, selectActor, showOptions=true }) => {
 
     return (
         <Col>
-            <Card style={{height: "100%"}}>
+            <Card style={{height: "100%", color: "white", backgroundColor: "#1e2129"}}>
                 <Card.Img variant="top" src={image} style={{ height: 300, objectFit: "cover" }} />
                 <Card.Body className="d-flex flex-column">
                     <Card.Title>{firstName} {lastName}</Card.Title>

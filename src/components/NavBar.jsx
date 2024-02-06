@@ -9,16 +9,16 @@ const NavBar = () => {
 
     return (
         <>
-            <Navbar bg="primary" variant="dark" expand="md">
+            <Navbar style={{ backgroundColor: "#00acc1"}}>
                 <Container>
-                    <Navbar.Brand as={Link} to="/">Movies App</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/" style={{ fontSize:20,  color: "white" }}>Movies App</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={Link} to="/">Movies</Nav.Link>
-                            <Nav.Link as={Link} to="/actors">Actors</Nav.Link>
-                            <Nav.Link as={Link} to="/directors">Directors</Nav.Link>
-                            <Nav.Link onClick={() => setShowGenres(true)}>Genres</Nav.Link>
+                            <Nav.Link as={Link} to="/" style={{ color: "white" }}>Movies</Nav.Link>
+                            <Nav.Link as={Link} to="/actors" style={{ color: "white" }}>Actors</Nav.Link>
+                            <Nav.Link as={Link} to="/directors" style={{ color: "white" }}>Directors</Nav.Link>
+                            <Nav.Link onClick={() => setShowGenres(true)} style={{ color: "white" }}>Genres</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

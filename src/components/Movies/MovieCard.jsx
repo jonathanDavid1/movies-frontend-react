@@ -15,12 +15,12 @@ const MovieCard = ({ movie, selectMovie }) => {
     return (
         <Col>
             <Card 
-                style={{height: "100%", cursor: "pointer"}}
+                style={{height: "100%", cursor: "pointer", backgroundColor: "#1e2129", color: "white"}}  
                 onClick={() => navigate(`/movies/${movie.id}`)}
             >
-                <Card.Img variant="top" src={image} style={{height: 300, objectFit: "cover"}} />
+                <Card.Img variant="top" src={image} style={{height: 300, objectFit: "cover", borderRadius: 5}} />
                 <Card.Body>
-                    <Card.Title>{name}</Card.Title>
+                    <Card.Title style={{color:"#00acc1"}}>{name}</Card.Title>
                     <Card.Text>
                         {synopsis}
                     </Card.Text>

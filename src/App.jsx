@@ -25,9 +25,7 @@ function App() {
 
   return (
     <HashRouter>
-      <div className="educational-purposes" >
-            Front-end made by Academlo instructors for educational purposes
-        </div>
+      <div style={{ backgroundColor: "#1e2129" }}>
       <NavBar />
       <Notification />
       { isLoading && <LoadingScreen /> }
@@ -41,6 +39,7 @@ function App() {
           <Route path="/movies/update/:id" element={<MovieForm />} />
         </Routes>
       </Container>
+      </div>
     </HashRouter>
   )
 }

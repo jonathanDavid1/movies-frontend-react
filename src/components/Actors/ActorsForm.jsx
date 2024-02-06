@@ -28,6 +28,7 @@ const ActorsForm = ({ show, handleClose, actorSelected }) => {
     }
 
     return (
+        
         <ModalForm
             show={show}
             handleClose={handleClose}
@@ -96,8 +97,8 @@ const ActorsForm = ({ show, handleClose, actorSelected }) => {
                     </Col>
                 </Row>
             </Form>
-
         </ModalForm>
+       
     );
 };
 
