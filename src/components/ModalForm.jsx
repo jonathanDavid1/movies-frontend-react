@@ -3,7 +3,8 @@ import { Button, Modal } from 'react-bootstrap';
 
 const ModalForm = ({ children, show, handleClose, save, title}) => {
     return (
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose} 
+        style={{color:"#00acc1"}}>
             <Modal.Header closeButton>
                 <Modal.Title>{title}</Modal.Title>
             </Modal.Header>
@@ -14,7 +15,8 @@ const ModalForm = ({ children, show, handleClose, save, title}) => {
                 <Button variant="secondary" onClick={handleClose}>
                     Close
                 </Button>
-                <Button variant="primary" onClick={save}>
+                <Button variant="primary" onClick={save}
+                style={{color:"black", backgroundColor:"#00acc1"}}>
                     Save Changes
                 </Button>
             </Modal.Footer>

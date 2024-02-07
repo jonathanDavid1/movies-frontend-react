@@ -25,7 +25,7 @@ function App() {
 
   return (
     <HashRouter>
-      <div style={{ backgroundColor: "#1e2129" }}>
+      <div style={{ backgroundColor: "#1e2129", height:"100%" }}>
       <NavBar />
       <Notification />
       { isLoading && <LoadingScreen /> }

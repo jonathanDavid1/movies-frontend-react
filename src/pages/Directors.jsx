@@ -37,13 +37,14 @@ const Directors = () => {
         <>
             <Row>
                 <Col md={3} xl={2}>
-                    <h4>Filter by nationality</h4>
+                    <h4 style={{ color:"#00acc1" }}>Filter by nationality</h4>
                     <ul>
                         {nationalities.map(nationality => (
                             <li
                                 className='filter-option'
                                 key={nationality}
                                 onClick={() => filterNationality(nationality)}
+                                style={{ color:"#00acc1" }}
                             >
                                 {nationality}
                             </li>
@@ -52,10 +53,11 @@ const Directors = () => {
                 </Col>
                 <Col>
                     <div className="d-flex justify-content-between align-items-start mb-3">
-                        <h1>Directors</h1>
+                        <h1 style={{ color:"#00acc1" }}>Directors</h1>
                         <Button
                             variant="success"
                             onClick={() => setShowDirectorsForm(true)}
+                            style={{ color:"black", backgroundColor:"#00acc1" }}
                         >
                             Add director
                         </Button>

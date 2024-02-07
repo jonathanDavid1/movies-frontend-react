@@ -18,10 +18,10 @@ const ActorCard = ({ actor, selectActor, showOptions=true }) => {
             <Card style={{height: "100%", color: "white", backgroundColor: "#1e2129"}}>
                 <Card.Img variant="top" src={image} style={{ height: 300, objectFit: "cover" }} />
                 <Card.Body className="d-flex flex-column">
-                    <Card.Title>{firstName} {lastName}</Card.Title>
+                    <Card.Title style={{color:"#00acc1"}}>{firstName} {lastName} </Card.Title>
                     <div className="flex-fill">
-                        <div><b>birthday: </b>{birthday}</div>
-                        <div><b>Nationality: </b>{nationality}</div>
+                        <div><b style={{color:"#00acc1"}}>birthday: </b>{birthday}</div>
+                        <div><b style={{color:"#00acc1"}}>Nationality: </b>{nationality}</div>
                     </div>
                     {
                         showOptions && (

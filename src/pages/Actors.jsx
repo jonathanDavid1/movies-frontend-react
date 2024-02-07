@@ -37,8 +37,8 @@ const Actors = () => {
         <>
             <Row>
                 <Col md={3} xl={2}>
-                    <h4>Filter by nationality</h4>
-                    <ul>
+                    <h4 style={{color: "#00acc1"}}>Filter by nationality</h4>
+                    <ul style={{color: "#00acc1"}}>
                         {nationalities.map(nationality => (
                             <li 
                                 className='filter-option' 
@@ -52,10 +52,11 @@ const Actors = () => {
                 </Col>
                 <Col>
                     <div className="d-flex justify-content-between align-items-start mb-3">
-                        <h1>Actors</h1>
+                        <h1 style={{color: "#00acc1"}}>Actors</h1>
                         <Button
                             variant="success"
                             onClick={() => setShowActorsForm(true)}
+                            style={{backgroundColor: "#00acc1", color: "black"}}
                         >
                             Add actor
                         </Button>
@@ -71,7 +72,6 @@ const Actors = () => {
                 show={showActorsForm} 
                 handleClose={closeForm} 
                 actorSelected={actorSelected}
-                backgroundColor= {"red"}
             />
         </>
     );

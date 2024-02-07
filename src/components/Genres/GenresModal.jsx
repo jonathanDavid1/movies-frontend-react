@@ -12,7 +12,8 @@ const GenresModal = ({ show, handleClose }) => {
     const dispatch = useDispatch();
 
     return (
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose}
+        style={{color:"#00acc1"}}>
             <Modal.Header closeButton>
                 <Modal.Title>Handle genres</Modal.Title>
             </Modal.Header>
@@ -25,7 +26,8 @@ const GenresModal = ({ show, handleClose }) => {
                     />
                     <Button 
                         variant="outline-success" 
-                        onClick={() => dispatch(addGenreThunk(newGenre))} 
+                        onClick={() => dispatch(addGenreThunk(newGenre))}
+                        style={{color:"black", backgroundColor:"#00acc1"}} 
                     >
                         Add
                     </Button>

@@ -29,13 +29,13 @@ const ActorsForm = ({ show, handleClose, actorSelected }) => {
 
     return (
         
-        <ModalForm
+        <ModalForm 
             show={show}
             handleClose={handleClose}
             title="Actors form"
             save={saveActor}
         >
-            <Form>
+            <div>
                 <Row className="mb-3">
                     <Col xs={9}>
                         <FloatingLabel label="Image URL">
@@ -96,7 +96,7 @@ const ActorsForm = ({ show, handleClose, actorSelected }) => {
                         </FloatingLabel>
                     </Col>
                 </Row>
-            </Form>
+            </div>
         </ModalForm>
        
     );

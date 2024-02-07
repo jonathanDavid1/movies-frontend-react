@@ -61,17 +61,18 @@ const MovieForm = () => {
                 </Col>
                 <Col sm={9} md={8} xl={9}>
 
-                    <input
+                    <input 
                         className="movie-name-input mb-5"
                         placeholder="Movie name"
                         value={movie.name}
                         onChange={e => editMovie("name", e.target.value)}
+                        style={{color:"#00acc1"}}
                     />
 
 
                     <div className="d-flex justify-content-between align-items-start">
-                        <h4>Genres</h4>
-                        <Button variant="outline-success" size="sm" onClick={() => openForm("genres")}>
+                        <h4 style={{color:"#00acc1"}}>Genres</h4>
+                        <Button variant="outline-success" size="sm" onClick={() => openForm("genres")} style={{color:"black", backgroundColor:"#00acc1"}}>
                             Add genre
                         </Button>
                     </div>
@@ -105,8 +106,8 @@ const MovieForm = () => {
 
 
                     <div className="d-flex justify-content-between align-items-start mt-4">
-                        <h3>Directors</h3>
-                        <Button variant="outline-success" size="sm" onClick={() => openForm("directors")}>
+                        <h3 style={{color:"#00acc1"}}>Directors</h3>
+                        <Button variant="outline-success" size="sm" onClick={() => openForm("directors")} style={{color:"black", backgroundColor:"#00acc1"}}>
                             Add Director
                         </Button>
                     </div>
@@ -117,8 +118,8 @@ const MovieForm = () => {
                     />
 
                     <div className="d-flex justify-content-between align-items-start mt-4">
-                        <h3>Actors</h3>
-                        <Button variant="outline-success" size="sm" onClick={() => openForm("actors")}>
+                        <h3 style={{color:"#00acc1"}}>Actors</h3>
+                        <Button variant="outline-success" size="sm" onClick={() => openForm("actors")} style={{color:"black", backgroundColor:"#00acc1"}}>
                             Add actor
                         </Button>
                     </div>
@@ -134,6 +135,7 @@ const MovieForm = () => {
                     variant="success"
                     size='lg'
                     onClick={saveMovie}
+                    style={{color:"black", backgroundColor:"#00acc1"}}
                 >
                     Save movie
                 </Button>
